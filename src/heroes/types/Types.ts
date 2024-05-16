@@ -11,3 +11,7 @@ export type Characters = {
     alter_ego: string, 
     characters: string
 }
+
+export type FormValue = {
+    searchText: string
+}

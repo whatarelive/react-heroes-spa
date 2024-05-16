@@ -21,9 +21,9 @@ export const HeroPage = () => {
   // Funcion onClik del boton Regresar.
   const onClick = () => {
     // Comprobamos si el heroe pertenece a Marvel o Dc para saber a donde regresar.
-    const route = heroe.publisher == 'Marvel Comics' ? 'marvel' : 'dc';
+    // const route = heroe.publisher == 'Marvel Comics' ? 'marvel' : 'dc';
     
-    navigate(`/${ route }`);
+    navigate(-1);
   }
 
   return (

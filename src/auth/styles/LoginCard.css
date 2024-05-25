@@ -1,0 +1,52 @@
+.login-title {
+    text-align: center;
+    color: #333;
+}
+
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f2f2f2;
+ }
+
+
+.login-form {
+     max-width: 400px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #fff;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+.login-label {
+     display: block;
+     margin-bottom: 10px;
+     color: #333;
+ }
+
+.login-input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     margin: 0 auto;
+     /* Add this line to center the input */
+     display: block;
+     /* Add this line to make the input a block element */
+     box-sizing: border-box;
+     /* Add this line to include padding and border in the width */
+ }
+
+.login-button {
+     width: 100%;
+     padding: 10px;
+     background-color: #333;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+.login-button:hover {
+     background-color: #555;
+ }

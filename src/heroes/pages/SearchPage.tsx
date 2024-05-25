@@ -31,7 +31,7 @@ export const SearchPage = () => {
     
     //if ( searchText.trim().length < 1 ) return;
     
-    navigate(`?q=${ searchText.toLowerCase().trim() }`)
+    navigate(`?q=${ searchText?.toLowerCase().trim() }`)
   }
 
   return (

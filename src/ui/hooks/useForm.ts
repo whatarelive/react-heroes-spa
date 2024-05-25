@@ -1,9 +1,8 @@
 import { useState } from "react"
-import { FormValue } from "../../heroes/types/Types";
 
 
-
-export const useForm = ( initialValue: FormValue ) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const useForm = ( initialValue: any ) => {
 
     const [ formState, setFormState ] = useState( initialValue );
 

@@ -6,7 +6,10 @@ export const types = {
 
 export type AuthAction = {
   type: string;
-  payload: string;
+  payload?: {
+    id: string,
+    name: string,
+  };
 };
 
 export type State = {

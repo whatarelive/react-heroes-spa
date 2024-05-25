@@ -13,5 +13,6 @@ export type Characters = {
 }
 
 export type FormValue = {
-    searchText: string
+    searchText?: string
+    username?: string 
 }

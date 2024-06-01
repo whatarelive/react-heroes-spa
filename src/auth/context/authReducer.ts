@@ -1,7 +1,7 @@
 import { AuthAction, State, types } from "../types/types";
 
 
-export const authReducer = ( initialState: State, action?: AuthAction ): State => {
+export const authReducer = ( initialState: State, action: AuthAction ): State => {
 
     switch ( action?.type ) {
         case types.login:

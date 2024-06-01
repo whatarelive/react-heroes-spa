@@ -15,7 +15,7 @@ describe('Pruebas en AuthReducer', () => {
     // Test #1 : Sobre el estado inicial.
     test('debe de retornar el estado por defecto', () => {
         // llamamos al reducer usando el estado inicial.
-        const state = authReducer( initialState );
+        const state = authReducer( initialState, {} as AuthAction );
 
         // Esperamos que el estado devuelto sea igual al inicial.
         expect( state ).toBe( initialState );

@@ -4,15 +4,15 @@ export const types = {
 }
 
 
-export type AuthAction = {
+export interface AuthAction {
   type: string;
   payload?: {
     id: string,
     name: string,
   };
-};
+}
 
-export type State = {
+export interface State {
   logged: boolean;
   name?: string;
-};
+}

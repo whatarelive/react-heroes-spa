@@ -11,7 +11,7 @@ const CaractersByHero = ({ alter_ego, characters }: Characters) =>{
 
 export const HeroCard = ({ hero }:{ hero: Heroe } ) => {
   
-  const img = `/public/heroes/${  hero.id }.jpg`;
+  const img = `/heroes/${  hero.id }.jpg`;
   
 
 

@@ -1,11 +1,9 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router";
-import queryString from "query-string";
-import { useForm } from "../../ui/hooks/useForm";
+import { useForm } from "../../util/hooks/useForm";
 import { getHeroByName } from "../helpers";
 import { HeroCard } from "../components";
-
-
+import queryString from "query-string";
 
 
 export const SearchPage = () => {
@@ -25,11 +23,11 @@ export const SearchPage = () => {
   // Se usa el custom hook useForm para manejar el comportamiento del input.
   const { searchText, onInputChange, onResetForm } = useForm({ searchText: (q as string) });
 
-  // Funcion de control del formulario que va ejecutar la navegacion de busqueda.
+  // Función de control del formulario que va ejecutar la navegación de busqueda.
   const handleSubmit = ( event: React.FormEvent<HTMLFormElement> ) => {
     event.preventDefault();
     
-    //if ( searchText.trim().length < 1 ) return;
+    if ( searchText.trim().length < 1 ) return;
     
     navigate(`?q=${ searchText?.toLowerCase().trim() }`)
   }
@@ -70,7 +68,7 @@ export const SearchPage = () => {
             Search a Hero
           </div>
 
-          <div className="alert alert-danger animate__animated animate__fadeIn" style={{ display: showError ? '' : 'none' }}>
+          <div aria-label="alert-error" className="alert alert-danger animate__animated animate__fadeIn" style={{ display: showError ? '' : 'none' }}>
             No hero with <b>{ q }</b>
           </div>
 

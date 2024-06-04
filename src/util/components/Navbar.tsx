@@ -18,7 +18,7 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
         <div className="container-fluid">
            
-            <Link className="navbar-brand" to={'/'}>Asociaciones</Link>
+            <Link className="navbar-brand" to={'/*'}>Asociaciones</Link>
             
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
